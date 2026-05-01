@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* prevent wrapping */
+    gap: 10px;
+    padding: 10px;
+}
+
+/* default boxes */
+.box {
+    width: 100px;
+    height: 150px;
+    background-color: #eeeff2;
+    border-left: 10px dotted #D0D0FF;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+/* hover effect */
+.box:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+/* last box (F) fixed bottom-right */
+.last {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
